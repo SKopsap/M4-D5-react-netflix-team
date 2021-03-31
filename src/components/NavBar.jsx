@@ -4,7 +4,6 @@ import { Button, Form, FormControl } from 'react-bootstrap'
 import { render } from '@testing-library/react'
 
 const NavBar = () => {
-
   render()
   return (
     <nav className="navbar navbar-expand-lg navbar-dark">
@@ -39,7 +38,7 @@ const NavBar = () => {
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="/admin">
-              BackOffice
+              Admin
             </Link>
           </li>
         </ul>
@@ -47,7 +46,11 @@ const NavBar = () => {
         <ul className="navbar-nav ml-auto">
           <li className="nav-item px-2">
             <Form inline>
-              <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+              <FormControl
+                type="text"
+                placeholder="Search"
+                className="mr-sm-2"
+              />
               <Button variant="outline-light">Search</Button>
             </Form>
           </li>
